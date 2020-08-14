@@ -1,0 +1,8 @@
+
+
+function sendActive()
+{
+	var ao = new AjaxObject101();
+	ao.sndReq("post", "/active.aspx", "nocache=1");
+
+}

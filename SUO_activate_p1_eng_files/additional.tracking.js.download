@@ -1,0 +1,111 @@
+$(document).ready(function() {
+	// track video/audio files played
+	$(window).on('beforeunload', function(e) {
+		$('video, audio').each(function(index) {
+			var mediaNode = $(this);
+			var mediaSrc = mediaNode[0].currentSrc;
+			var mediaPlayed = mediaNode[0].currentTime;
+			if( mediaPlayed != 0 ) {
+				var mediaDuration = mediaNode[0].duration;
+				var mediaPercentage = (mediaPlayed > 0) ? Math.round(mediaPlayed / mediaDuration * 100, 1) + '%' : 0;
+				var evtCategory = mediaNode[0].nodeName.charAt(0).toUpperCase() + mediaNode[0].nodeName.substr(1).toLowerCase();
+				var evtAction = mediaPercentage + ' played';
+				var evtLabel = (mediaNode[0].title != '') ? mediaNode[0].title : mediaSrc;
+				gtag('event', 'Audio/Video activated', {
+					'event_category': evtCategory, 
+					'event_action': evtAction, 
+					'event_label': evtLabel
+				});
+			}
+		});
+	});
+	// track mailto clicks
+	$('html').on( "click", 'a[href^="mailto:"]', function(e) {
+		//e.preventDefault();
+		gtag('event', 'MailTo activated', {
+			'event_category': 'Email', 
+			'event_action': $(this).attr('href').replace(/mailto\:(.+)/ig, '\$1'), 
+			'event_label': $(this).text()
+		});
+	});
+	// track external url clicks
+	$('html').on( "click", 'a[href^="http"]', function(e) {
+		//e.preventDefault();
+		gtag('event', 'External URL activated', {
+			'event_category': 'External URL', 
+			'event_action': $(this).attr('href'), 
+			'event_label': $(this).text()
+		});
+	});
+	// track expand/collapse clicks (ie10+)
+	$('html').on('click', 'details', function(e) {
+		var elementState = $(this).attr('open') != 'open' ? 'open' : 'closed';
+		if( elementState == 'open' ) {
+			gtag('event', 'Expand/Collapse activated', {
+				'event_category': 'Expand/Collapse', 
+				'event_action': 'Details tag opened', 
+				'event_label': $(this).find('summary').text()
+			});
+		}
+	});
+	// track pdf link clicks
+	$('a[href$=".pdf"]').on('click', function(e) {
+		//e.preventDefault();
+		gtag('event', 'PDF Download activated', {
+			'event_category': 'PDF download',
+			'event_action': $(this).attr('href'), 
+			'event_label': $(this).text()
+		});
+	});
+	// track mp4 link clicks
+	$('a[href$=".mp4"]').on('click', function(e) {
+		//e.preventDefault();
+		gtag('event', 'MP4 Download activated', {
+			'event_category': 'MP4 download', 
+			'event_action': $(this).attr('href'), 
+			'event_label': $(this).text()
+		});
+	});
+	// track form submissions
+	$('form').on('submit', function(e) {	
+		//e.preventDefault();
+		var formAction = $(this).attr('action');
+		var evtCategory = 'Submit Form';
+		var evtAction = $(location).attr('href');
+		var evtLabel = 'Form Action: ' + formAction;
+		if( formAction.indexOf('search.cgi') != -1 ) {
+			evtCategory = 'Submit Search';
+			var querySimple = ($("input[name='query_simple']").val()) ? $("input[name='query_simple']").val() : '';
+			var queryAnd = ($("input[name='query_and']").val()) ? $("input[name='query_and']").val() : '';
+			var queryPhrase = ($("input[name='query_phrase']").val()) ? $("input[name='query_phrase']").val() : '';
+			var queryNot = ($("input[name='query_not']").val()) ? $("input[name='query_not']").val() : '';
+			if( querySimple ) {
+				evtLabel = 'Simple search: ' + querySimple;
+			}
+			else if( queryAnd || queryPhrase || queryNot ) {
+				evtLabel = 'Advanced searched: ';
+				if( queryAnd ) { evtLabel += '[All the words] ' + queryAnd; }
+				if( queryPhrase ) { evtLabel += '[The phrase] ' + queryPhrase; }
+				if( queryNot ) { evtLabel += '[None of the words] ' + queryNot; }
+			}
+			else {
+				evtLabel = 'Some other kind of search';
+			}
+		}
+		else if(formAction.indexOf('interceptor.php') != -1 ) {
+			evtCategory = 'Submit Problem';
+			evtLabel = 'Reported problem(s): ';
+			if( $("#problem1").is(':checked') ) { evtLabel += '[Something is broken]'; }
+			if( $("#problem2").is(':checked') ) { evtLabel += '[It has a spelling or grammar mistake]'; }
+			if( $("#problem3").is(':checked') ) { evtLabel += '[The information is wrong]'; }
+			if( $("#problem4").is(':checked') ) { evtLabel += '[The information is outdated]'; }
+			if( $("#problem5").is(':checked') ) { evtLabel += '[I can’t find what I’m looking for]'; }
+			if( $("#problem6").is(':checked') ) { evtLabel += '[Other]'; }
+		}
+		gtag('event', 'Form activated', {
+			'event_category': evtCategory, 
+			'event_action': evtAction, 
+			'event_label': evtLabel
+		});
+	});
+});

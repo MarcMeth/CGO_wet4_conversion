@@ -1,0 +1,79 @@
+$(document).ready(function(e) {
+	$(window).on('load', function(e) {
+		checkPeStatus();
+	});
+	$('body').on('click', 'a#lclLnk, a#lclBtn', function() {
+		setPeFalse();
+	});
+});
+
+
+function checkPeStatus() {
+	// check URL and set 'true' explicitly because IE is just bad
+	if( window.location.href.indexOf('pedisable=false') > -1 ) {
+		setPeFalse();
+	}
+	// check URL and set 'false' explicitly because IE is just bad
+	else if( window.location.href.indexOf('pedisable=true') > -1 ) {
+		setPeTrue();
+	}
+	if( localStorage.getItem('pedisable') == 'true' ) {
+		setPeTrue();
+	  showBasicMessage();
+	  hideBrokenClock();
+	}
+	else {
+		if( $('#nrc_clock').length ) {
+			$.getScript('/_gcwu_webclock/web_clock.min.js').done(function( script, textStatus ) {
+				initClock();
+			});
+		}
+	}
+}
+
+
+function showBasicMessage() {
+	var lang = $('html').attr('lang');
+	var basicMessage = '<div id="pedisable-message" class="module-archive module-simplify span-8">'+"\n";
+	if( $('div.wb-sec-def').length ) {
+    basicMessage = '<div id="pedisable-message" class="module-archive module-simplify span-6">'+"\n";
+	}
+	if( lang == 'fr' ) {
+		basicMessage += '<h3><span class="color-dark">Avis :</span> Version HTML simplifiée</h3>'+"\n";
+		basicMessage += '<p>Vous naviguez présentement sur la version HTML simplifiée de cette page. Certaines fonctionnalités peuvent être déactivées.</p>'+"\n";
+		basicMessage += '<p><a id="lclLnk" href="?pedisable=false">Passer à la version standard</a></p>'+"\n";
+	}
+	else {
+		basicMessage += '<h3><span class="color-dark">Notice:</span> Basic HTML</h3>'+"\n";
+		basicMessage += '<p>You are viewing Basic HTML view. Some features may be disabled.</p>'+"\n";
+		basicMessage += '<p><a id="lclLnk" href="?pedisable=false">Switch to standard version</a></p>'+"\n";		
+	}
+	basicMessage += '</div>'+"\n";
+	$('div#wb-main-in').prepend(basicMessage);
+}
+
+
+function hideBrokenClock(){
+	if( $('#nrc_clock').length ) {
+		var lang = $('html').attr('lang');
+		var clockMessage = '<div id="pedisable-message-clock" class="module-attention margin-bottom-none margin-top-none">'+"\n";
+		if( lang == 'fr' ) {
+			clockMessage += '<section><h2>Avis : Version HTML simplifiée</h2><p>Vous naviguez présentement sur la version HTML simplifiée de cette page.<br />Certaines fonctionnalités de l\'horloge du Web peuvent être déactivées.<br /><br /><a id="lclBtn" href="?pedisable=false" class="button button-confirm">Passer à la version standard</a></p></section>'+"\n";
+		}
+		else {
+			clockMessage += '<section><h2>Notice: Basic HTML</h2><p>You are using Basic HTML version of the browser.<br />Some of the Web Clock features may be disabled.<br /><br /><a id="lclBtn" href="?pedisable=false" class="button button-confirm">Switch to standard version</a></p></section>'+"\n";		
+		}
+		clockMessage += '</div>'+"\n";
+		$('#nrc_clock').html(clockMessage);
+	}
+}
+
+
+function setPeTrue() {
+	localStorage.setItem('pedisable', 'true');
+}
+
+
+function setPeFalse() {
+	localStorage.setItem('pedisable', 'false');
+}
