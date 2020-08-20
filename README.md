@@ -12,3 +12,4 @@ Found below are mockups of the NRC's codes-guides online library after being con
 ## Tools used
 - https://wet-boew.github.io/wet-boew/index-en.html
 - https://wet-boew.github.io/wet-boew-styleguide/index-en.html
+- https://www.canada.ca/en/government/about/design-system/pattern-library.html
