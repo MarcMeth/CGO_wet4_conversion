@@ -7,10 +7,11 @@ Found below are mockups of the NRC's codes-guides online library after being con
 - Subject to change
 
 ## Completed mockups
-[Login page - english](https://marcmeth.github.io/CGO_wet4_conversion/SUO_login_eng)
+[Login page - english](https://marcmeth.github.io/CGO_wet4_conversion/SUO_login_eng)<br/>
+[Landing page - english](https://marcmeth.github.io/CGO_wet4_conversion/SUO_main_eng)
+
 
 ## Being worked on
-[Landing page - english](https://marcmeth.github.io/CGO_wet4_conversion/SUO_main_eng)
 
 ## Tools used
 - https://wet-boew.github.io/wet-boew/index-en.html
