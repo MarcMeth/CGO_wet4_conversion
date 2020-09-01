@@ -9,7 +9,7 @@ Found below are mockups of the NRC's codes-guides online library after being con
 ## Completed mockups
 [Login page - english](https://marcmeth.github.io/CGO_wet4_conversion/SUO_login_eng)<br/>
 [Landing page - english](https://marcmeth.github.io/CGO_wet4_conversion/SUO_main_eng)<br/>
-[Forgot password page - english](https://marcmeth.github.io/CGO_wet4_conversion/SUO_forgot_username_eng)
+[Forgot username page - english](https://marcmeth.github.io/CGO_wet4_conversion/SUO_forgot_username_eng)
 
 ## Being worked on
 
