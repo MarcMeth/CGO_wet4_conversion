@@ -1,300 +1,263 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en" dir="ltr">
-<head>
-	<meta charset="utf-8">
-	<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+	<head>
+		<meta charset="utf-8">
+		<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
 		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-	<title>CODES-GUIDES Online Library - National Research Council Canada</title>
-	<meta content="width=device-width,initial-scale=1" name="viewport">
-	<meta name="description" content="Static header and footer on Bootstrap 3 with the mega menu. Web Experience Toolkit (WET) includes reusable components for building and maintaining innovative Web sites that are accessible, usable, and interoperable.">
-	<link href="https://wet-boew.github.io/themes-dist/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/css/theme.min.css">
-	<noscript><link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/css/noscript.min.css" /></noscript>
-</head>
-<body vocab="http://schema.org/" typeof="WebPage">
-
-<header>
-	<div id="wb-bnr" class="container">
-		<div class="row">
-			<section id="wb-lng" class="col-xs-3 col-sm-12 pull-right text-right">
-				<h2 class="wb-inv">Language selection</h2>
-				<ul class="list-inline mrgn-bttm-0">
-					<li>
-						<a lang="fr" hreflang="fr" href="home-fr.html">
-							<span class="hidden-xs">Français</span>
-							<abbr title="Français" class="visible-xs h3 mrgn-tp-sm mrgn-bttm-0 text-uppercase">fr</abbr>
-						</a>
-					</li>
+		<title>CODES-GUIDES Online Library - National Research Council Canada</title>
+		<meta content="width=device-width,initial-scale=1" name="viewport">
+		<meta name="description" content="Static header and footer on Bootstrap 3 with the mega menu. Web Experience Toolkit (WET) includes reusable components for building and maintaining innovative Web sites that are accessible, usable, and interoperable.">
+		<link href="https://wet-boew.github.io/themes-dist/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/css/theme.min.css">
+		<noscript><link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/css/noscript.min.css" /></noscript>
+	</head>
+	<body vocab="http://schema.org/" typeof="WebPage">
+		<header>
+			<div id="wb-bnr" class="container">
+				<div class="row">
+					<section id="wb-lng" class="col-xs-3 col-sm-12 pull-right text-right">
+						<h2 class="wb-inv">Language selection</h2>
+						<ul class="list-inline mrgn-bttm-0">
+							<li>
+								<a lang="fr" hreflang="fr" href="home-fr.html">
+									<span class="hidden-xs">Français</span>
+								<abbr title="Français" class="visible-xs h3 mrgn-tp-sm mrgn-bttm-0 text-uppercase">fr</abbr>
+							</a>
+						</li>
+					</ul>
+				</section>
+				<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher" typeof="GovernmentOrganization">
+					<a href="https://www.canada.ca/en.html" property="url">
+						<img src="https://wet-boew.github.io/themes-dist/GCWeb/assets/sig-blk-en.svg" alt="" property="logo"><span class="wb-inv" property="name"> Government of Canada / <span lang="fr">Gouvernement du Canada</span></span>
+					</a>
+					<meta property="areaServed" typeof="Country" content="Canada">
+					<link property="logo" href="https://wet-boew.github.io/themes-dist/GCWeb/assets/wmms-blk.svg">
+				</div>
+				<section id="wb-srch" class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+					<h2>Search</h2>
+					<form action="#" method="post" name="cse-search-box" role="search">
+						<div class="form-group wb-srch-qry">
+							<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label>
+							<input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search" value="" size="34" maxlength="170" placeholder="Search Canada.ca">
+							<datalist id="wb-srch-q-ac">
+							</datalist>
+						</div>
+						<div class="form-group submit">
+							<button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span class="glyphicon-search glyphicon"></span><span class="wb-inv">Search</span></button>
+						</div>
+					</form>
+				</section>
+			</div>
+		</div>
+		<nav class="gcweb-menu" typeof="SiteNavigationElement">
+			<div class="container">
+				<h2 class="wb-inv">Menu</h2>
+				<button type="button" aria-haspopup="true" aria-expanded="false"><span class="wb-inv">Main </span>Menu <span class="expicon glyphicon glyphicon-chevron-down"></span></button>
+				<ul role="menu" aria-orientation="vertical" data-ajax-replace="https://www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+					<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/jobs.html">Jobs and the workplace</a></li>
+					<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration and citizenship</a></li>
+					<li role="presentation"><a role="menuitem" href="https://travel.gc.ca/">Travel and tourism</a></li>
+					<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/business.html">Business and industry</a></li>
+					<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+					<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/health.html">Health</a></li>
+					<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+					<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/environment.html">Environment and natural resources</a></li>
+					<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/defence.html">National security and defence</a></li>
+					<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/culture.html">Culture, history and sport</a></li>
+					<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/policing.html">Policing, justice and emergencies</a></li>
+					<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/transport.html">Transport and infrastructure</a></li>
+					<li role="presentation"><a role="menuitem" href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada and the world</a></li>
+					<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/finance.html">Money and finances</a></li>
+					<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/science.html">Science and innovation</a></li>
 				</ul>
-			</section>
-			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher" typeof="GovernmentOrganization">
-				<a href="https://www.canada.ca/en.html" property="url">
-					<img src="https://wet-boew.github.io/themes-dist/GCWeb/assets/sig-blk-en.svg" alt="" property="logo"><span class="wb-inv" property="name"> Government of Canada / <span lang="fr">Gouvernement du Canada</span></span>
-				</a>
-				<meta property="areaServed" typeof="Country" content="Canada">
-				<link property="logo" href="https://wet-boew.github.io/themes-dist/GCWeb/assets/wmms-blk.svg">
 			</div>
-			<section id="wb-srch" class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
-				<h2>Search</h2>
-				<form action="#" method="post" name="cse-search-box" role="search">
-					<div class="form-group wb-srch-qry">
-						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label>
-						<input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search" value="" size="34" maxlength="170" placeholder="Search Canada.ca">
-						<datalist id="wb-srch-q-ac">
-						</datalist>
-					</div>
-					<div class="form-group submit">
-						<button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span class="glyphicon-search glyphicon"></span><span class="wb-inv">Search</span></button>
-					</div>
-				</form>
-			</section>
-		</div>
-	</div>
-	<nav class="gcweb-menu" typeof="SiteNavigationElement">
-		<div class="container">
-			<h2 class="wb-inv">Menu</h2>
-			<button type="button" aria-haspopup="true" aria-expanded="false"><span class="wb-inv">Main </span>Menu <span class="expicon glyphicon glyphicon-chevron-down"></span></button>
-			<ul role="menu" aria-orientation="vertical" data-ajax-replace="https://www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
-				<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/jobs.html">Jobs and the workplace</a></li>
-				<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration and citizenship</a></li>
-				<li role="presentation"><a role="menuitem" href="https://travel.gc.ca/">Travel and tourism</a></li>
-				<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/business.html">Business and industry</a></li>
-				<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
-				<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/health.html">Health</a></li>
-				<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
-				<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/environment.html">Environment and natural resources</a></li>
-				<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/defence.html">National security and defence</a></li>
-				<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/culture.html">Culture, history and sport</a></li>
-				<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/policing.html">Policing, justice and emergencies</a></li>
-				<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/transport.html">Transport and infrastructure</a></li>
-				<li role="presentation"><a role="menuitem" href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada and the world</a></li>
-				<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/finance.html">Money and finances</a></li>
-				<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/science.html">Science and innovation</a></li>
-			</ul>
-		</div>
-	</nav>
-	<nav id="wb-bc" property="breadcrumb">
-		<h2>You are here:</h2>
-		<div class="container">
-			<ol class="breadcrumb">
-				<li><a href="https://www.canada.ca/en.html">Home</a></li>
-				<li><a href="https://nrc.canada.ca/en/">National Research Council Canada</a></li>
-				<li><a href="https://nrc.canada.ca/en/certifications-evaluations-standards">Certifications, evaluations and standards</a></li>
-				<li><a href="https://nrc.canada.ca/en/certifications-evaluations-standards/codes-canada">Codes Canada</a></li>
-			</ol>
-		</div>
-	</nav>
-</header>
-			<!-- MainContentStart -->
-
-<main property="mainContentOfPage" class="container" typeof="WebPageElement">
-
-<!-- CONTENT TITLE BEGINS | DEBUT DU TItrE DU CONTENU -->
-<h1 class="provisional gc-thickline">Codes-Guides Online Library</h1>
-<!-- CONTENT TITLE ENDS | FIN DU TItrE DU CONTENU -->
-
-<h2 class="h3 mrgn-bttm-0">2. Your order information</h2>
-<meter value="5" min="0" max="10">Step 2 of 4</meter>
-
-
-	
-
-
-	<form role="form">
-		<div class="well">
-		   <div class="form-group">
-		     <label for="label-1-1">Order number</label>
-		       <input type="text" size="20" id="label-1-1" name="label-1-1" class="form-control" />
-		       <p><a href="https://codes-guides.nrc.ca/confirmation_e.pdf" target="confirm" title="Where do I find my Order Number?" class="ui-link">Where do I find my Order Number?</a></p>
-		   </div>
-
-
-
-
-<fieldset class="form-inline chkbxrdio-grp">
-			<legend class="required"><span class="field-name">Please read and agree with the Terms of this <a class="wb-lbx" title="Licence Agreement" href="#inline_content">Licence Agreement</a></span> <strong class="required">(required)</strong></legend>
-			<div class="label-inline">
-				<input type="checkbox" name="example6" value="1" id="tech5" required="required" />
-				<label for="tech5">I agree</label>
+		</nav>
+		<nav id="wb-bc" property="breadcrumb">
+			<h2>You are here:</h2>
+			<div class="container">
+				<ol class="breadcrumb">
+					<li><a href="https://www.canada.ca/en.html">Home</a></li>
+					<li><a href="https://nrc.canada.ca/en/">National Research Council Canada</a></li>
+					<li><a href="https://nrc.canada.ca/en/certifications-evaluations-standards">Certifications, evaluations and standards</a></li>
+					<li><a href="https://nrc.canada.ca/en/certifications-evaluations-standards/codes-canada">Codes Canada</a></li>
+				</ol>
 			</div>
-</fieldset>
-
-<br>
-	
-		<section id="inline_content" class="mfp-hide modal-dialog modal-content overlay-def">
-			<header class="modal-header">
-				<h2 class="modal-title">Licence Agreement</h2>
-			</header>
-			<div class="modal-body">
-
-				<p>﻿Through its Codes-Guides On-line Library, the National Research Council of Canada (NRC) offers electronic access to publications within the National Construction Codes and Guides collection. The <abbr title="National Research Council of Canada">NRC</abbr> offers electronic access by way of downloadable PDFs and on-line subscriptions for single and, for select products, concurrent users.</p>
-				<p>By completing the Purchase Order form made available through the <abbr title="National Research Council of Canada">NRC</abbr>’s Virtual Store and by submitting the completed form to the <abbr title="National Research Council of Canada">NRC</abbr>, you are requesting electronic access to the publications identified in your Purchase Order.</p>
-				<p>Your access to and use of the electronic publication(s) that you have ordered is subject to the terms and conditions of this license agreement. You are not permitted to access on-line subscriptions or to download the publications identified in your Purchase Order until you have agreed to be bound by all of the terms and conditions of this license agreement.</p>
-				<p>Below this license agreement there is the following on-screen statement: I agree with the terms of this license agreement. By clicking the box that precedes the statement I agree with the terms of this license agreement you are indicating your consent to be bound by and be a party to this license agreement with the <abbr title="National Research Council of Canada">NRC</abbr>. if you do not agree with all of the terms and conditions, do not click this box; you will not be able to proceed with any further steps in the process of activating the subscription or download you have ordered. For information, contact: Client Services – Codes-Guides On-line</p>
-				<p>For paid on-line subscription products, no refund of the subscription fee and no exchange will be provided if you have fully accepted the terms of this agreement and have proceeded with the activation of the subscriptions or the downloads you ordered.</p>
-
-				<h3>1.0 Definitions</h3>
-				<aside class="wb-fnote" role="note">
-				<dl>
-				<dt>Activate</dt>
-				<dd id="fn1">
-					<p><strong>Activate</strong> means to electronically select the Licensed Product for activation during your completion of the on-line process established by the <abbr title="National Research Council of Canada">NRC</abbr> for user registration and activation of subscriptions with the <abbr title="National Research Council of Canada">NRC</abbr>’s Codes-Guides On-line Library. Activated and Activation have corresponding meanings.</p>
-					<p class="fn-rtn"><a href="#fn1-rf"><span class="wb-inv">Return to footnote </span>1<span class="wb-inv"> referrer</span></a></p>
-				</dd>
-				</dl>
-			    </aside>
-				<p></p>
-				<p>Activation Date means the calendar date on which you Activate your access to the Licensed Product.</p>
-				<p>Codes-Guides On-line Library means the collection of <abbr title="National Research Council of Canada">NRC</abbr> publications available at How to activate subscriptions.</p>
-				<p>Concurrent User – On-line Subscription Product means an electronic publication, or collection of publications, available for select products in the <abbr title="National Research Council of Canada">NRC</abbr>’s National Construction Codes and Guides collection that is made available by the <abbr title="National Research Council of Canada">NRC</abbr> for simultaneous on-line access by a number of Users.</p>
-				<p>Licensed Product means any or all of the following products which you identified in your Purchase Order: Single User – On-line Subscription Product, Concurrent User – On-line Subscription Product and PDF Download Product.</p>
-				<p>On-line Subscription Period means, with respect to Paid On-line Subscription Products, a consecutive number of calendar days commencing on the Activation Date and expiring on the date advertised by the <abbr title="National Research Council of Canada">NRC</abbr> in association with the On-line Subscription Product that you identified in your Purchase Order.</p>
-				<p>PDF Download Product means an electronic publication, or collection of publications, in the <abbr title="National Research Council of Canada">NRC</abbr>’s National Construction Codes and Guides collection that is made available by the <abbr title="National Research Council of Canada">NRC</abbr> for download from <abbr title="National Research Council of Canada">NRC</abbr>’s server in Portable Document Format (.pdf).</p>
-				<p>Purchase Order means the electronic purchase order form, available at the <abbr title="National Research Council of Canada">NRC</abbr>’s Virtual Store, that you completed and submitted to the <abbr title="National Research Council of Canada">NRC</abbr> to request the Licensed Product(s) identified therein.</p>
-				<p>On-line Subscription Product means a Concurrent User – On-line Subscription Product or a Single User – On-line Subscription Product.</p>
-				<p>Paid On-line Subscription Product means an On-line Subscription Products that requires the payment of a Subscription Fee to the <abbr title="National Research Council of Canada">NRC</abbr>.</p>
-				<p>Single User – On-line Subscription Product means an electronic publication, or collection of publications, in the <abbr title="National Research Council of Canada">NRC</abbr>’s National Construction Codes and Guides collection that is made available by the <abbr title="National Research Council of Canada">NRC</abbr> for electronic access by a single User.</p>
-				<p>Subscription Fee means the purchase price, if any, of an On-line Subscription Product as shown in the Purchase Order you submitted to the <abbr title="National Research Council of Canada">NRC</abbr> through the <abbr title="National Research Council of Canada">NRC</abbr>’s Virtual Store.</p>
-				<p>User means a single, natural person who may be you or one of your employees.</p>
-				<p>You means the legal person in whose name the Licensed Product is purchased and the employees of that legal person. The possessive adjective your has a corresponding meaning.</p>
-
-				<h3>2.0 Grant of license</h3>
-				<p>In consideration of payment of the applicable Subscription Fee and your consent to abide by the terms and conditions of this License, the <abbr title="National Research Council of Canada">NRC</abbr> grants you a non-exclusive right to use the Licensed Product(s) that you identified in your Purchase Order, within the limits stated in this License. This License does not give you any ownership rights to the Licensed Product, and you must agree not to use the Licensed Product in any manner other than as allowed by this License.</p>
-
-
-				<h3>3.0 Restrictions on copying</h3>
-				<p>The Licensed Product is owned by the <abbr title="National Research Council of Canada">NRC</abbr> and is protected by Canadian Copyright Law and international treaty provisions. You may reproduce the human-readable text version of the Licensed Product subject to the following restrictions:</p>
-				<ol>
-					<li>reproductions may be made in no other manner than by use of the copy-and-paste function of Adobe Acrobat or Reader; and</li>
-					<li>reproduction must be limited to extracted portions that cumulatively amount to no more than 5% of the human-readable text version of any one of the publications included in the Licensed Product. Any other reproduction requires the written permission of the <abbr title="National Research Council of Canada">NRC</abbr>.</li>
-				</ol>
-
-				<h3>4.0 General restrictions on use</h3>
-
-				<p>Except as expressly permitted in this Agreement, you shall not:</p>	
-
-				<ol>
-					<li>systematically reproduce, redistribute, display, or otherwise make available the publication(s), or excerpts thereof, contained in the Licensed Product;</li>
-					<li>activate<sup id="fn1-rf" tabindex="-1"><a class="fn-lnk" href="#fn1"><span class="wb-inv">Footnote </span>1</a></sup>, unlock or otherwise gain electronic access to the Licensed Product by any means other than those provided by the <abbr title="National Research Council of Canada">NRC</abbr>;</li>
-					<li>make electronically accessible any publication(s) or excerpts thereof contained in the Licensed Product, including, but not limited to, by email, on-line service, or Wide Area Network, such as the Internet;</li>
-					<li>abridge, modify, translate or create any derivative work based upon any publication, or excerpts thereof, contained in the Licensed Product, including, but not limited to, the creation of a searchable archive of codes and guides, without the prior written consent of the <abbr title="National Research Council of Canada">NRC</abbr>; and</li>
-					<li>remove, obscure or modify in any way the copyright notices or any other notices or disclaimers that appear on publications contained in the Licensed Product.</li>
-				</ol>
-
-				<h3>5.0 Additional restrictions on use of Single User – On-line Subscription Products</h3>
-				<p>If the Licensed Product that you purchased is a Single User – On-line Subscription Product, you shall not in relation to that Licensed Product,</p>
-				<ol>
-					<li>use a User Name and/or Password not registered by you directly with the <abbr title="National Research Council of Canada">NRC</abbr>;</li>
-					<li>allow anyone other than you to have access to the Licensed Product; nor</li>
-					<li>allow anyone other than you to have access to your User Name and/or Password registered by you with the <abbr title="National Research Council of Canada">NRC</abbr>.</li>
-				</ol>
-
-				<h3>6.0 Additional restrictions on use of Concurrent User – On-line Subscription Products</h3>
-				<p>If the Licensed Product that you purchased is a Concurrent User – On-line Subscription Product, you shall not in relation to that Licensed Product, allow the number of concurrent users of the Licensed Product to exceed the maximum number of concurrent users advertised by the <abbr title="National Research Council of Canada">NRC</abbr> in association with the Concurrent User – On-line Subscription Product that you identified in your Purchase Order.</p>
-
-				<h3>7.0 Additional restrictions on use of PDF download products</h3>
-				<p>If the Licensed Product that you purchased is a PDF Download Product, you shall not in relation to that Licensed Product, unlock the PDF Download Product, or otherwise obtain access to and save the content of the PDF Download Product onto a personal computer, any more than two (2) times.</p>
-
-				<h3>8.0 Your liability</h3>
-				<p>You are liable for any failure by you, including your employees and any person whom you permit to use the Licensed Product, to comply with the terms of this Agreement.</p>
-
-
-				<h3>9.0 Availability</h3>
-				<p>The Licensed Product is subject to periodic unavailability due to regular maintenance including, but not limited to, maintenance of the server(s) and other equipment used to host the <abbr title="National Research Council of Canada">NRC</abbr>’s Codes-Guides On-line Library, installation or testing of software and loading of publications as they become available. The <abbr title="National Research Council of Canada">NRC</abbr> shall make a reasonable effort to minimize the extent of any period of unavailability due to such regular maintenance. You shall not be entitled to any credit, reduction, set-off against the purchase price or other compensation from the <abbr title="National Research Council of Canada">NRC</abbr> for downtime or any interruption in the availability of the Licensed Product.</p>
-
-
-				<h3>10.0 Transfer of license</h3>
-				<p>You may not assign, sublicense or otherwise transfer this License without the prior written consent of the <abbr title="National Research Council of Canada">NRC</abbr>. If consent is given, the third party must agree to accept the terms and conditions of this License.</p>
-
-				<h3>11.0 Limited warranty</h3>
-
-				<p><strong>11.1</strong> The <abbr title="National Research Council of Canada">NRC</abbr> warrants that the publications contained in the Licensed Product do not infringe any copyright or violate any obligation of confidentiality. </p>
-
-				<p><strong>11.2</strong> The electronic access to, and use of, the Licensed Product and the Codes-Guides On-line Library is provided to you on an as is basis and has not been supplied to meet your particular requirements. It is your responsibility to satisfy yourself prior to entering into this agreement that the on-line access delivery and/or the .pdf download will meet your requirements and be compatible with your hardware/software configuration. No failure of any part of the Licensed Product to be suitable for your requirements will give rise to any claim against the <abbr title="National Research Council of Canada">NRC</abbr>.</p>
-				<p><strong>11.3</strong> Reasonable care is taken to ensure the accuracy and completeness of the information set out in the publication contained in the licensed product, but the <abbr title="National Research Council of Canada">NRC</abbr> makes no representations or express or implied warranties that the licensed product is free from errors or omissions. In case of inconsistency between the human readable text contained in the licensed product and the hard-copy printed version of the national construction codes and guides published by the <abbr title="National Research Council of Canada">NRC</abbr>, the latter shall have priority.</p>
-				<p><strong>11.4</strong> Except as expressly stated herein, the <abbr title="National Research Council of Canada">NRC</abbr> disclaims any warranties, expressed, implied, or statutory, of any kind or nature with respect to the licensed product and the <abbr title="National Research Council of Canada">NRC</abbr>'s codes-guides on-line library, including, but not limited to, warranties of performance, freedom from error or defect, performance or merchantability or fitness for a particular purpose. In no event shall the <abbr title="National Research Council of Canada">NRC</abbr> be liable for any indirect or consequential damages (including, without limitation, damages for loss of business profits, lost savings or other incidental damages) arising from the use of the licensed product or from the use of the <abbr title="National Research Council of Canada">NRC</abbr>'s codes-guides on-line library.</p>
-				<p><strong>11.5</strong> The aggregate maximum liability of the <abbr title="National Research Council of Canada">NRC</abbr> in respect of any direct loss or any other loss (to the extent that such loss is not excluded by this License), whether such claim arises in contract or tort, shall not exceed $1000.</p>
-
-				<h3>12.0 General</h3>
-
-				<p>This agreement supersedes all prior communications, negotiations and agreements concerning the Licensed Product. No amendment or waiver of terms is effective unless it is in writing, signed by both parties, and specifically states the intention to affect this agreement.</p>
-				<h3>13.0 Applicable laws</h3>
-				<p>This License is governed by the laws of Ontario and the laws of Canada applicable therein. In relation to this License, you consent to jurisdiction of the courts of Ontario.</p>
-				<h3>14.0 Termination</h3>
-				<p>In the case of a Paid On-line Subscription Product purchased by you, this License is effective for the On-line Subscription Period, unless it is terminated earlier.</p>
-				<p>In the case of a PDF Download Product, this License is effective in perpetuity, unless it is terminated earlier.</p>
-				<p>This License terminates automatically without notice from the <abbr title="National Research Council of Canada">NRC</abbr> if you fail to comply with any provision of this License.</p>
-
-				<p>National Research Council Canada<br>
-				Codes-Guides On-line Library<br>
-				Subscription License</p>
-
-			</div>
-		</section>
-		   			
-		<button type="submit" class="btn btn-primary">Continue</button>
-		<button type="submit" class="btn btn-default">Cancel</button>
+		</nav>
+	</header>
+	<!-- MainContentStart -->
+	<main property="mainContentOfPage" class="container" typeof="WebPageElement">
+		<!-- CONTENT TITLE BEGINS | DEBUT DU TItrE DU CONTENU -->
+		<h1 class="provisional gc-thickline">Codes-Guides Online Library</h1>
+		<!-- CONTENT TITLE ENDS | FIN DU TItrE DU CONTENU -->
+		<h2 class="h3 mrgn-bttm-0">2. Your order information</h2>
+		<meter value="5" min="0" max="10">Step 2 of 4</meter>
 		
-		</div>
-	</form>
+		<form role="form">
+			<div class="well">
+				<div class="form-group">
+					<label for="label-1-1">Order number</label>
+					<input type="text" size="20" id="label-1-1" name="label-1-1" class="form-control" />
+					<p><a href="https://codes-guides.nrc.ca/confirmation_e.pdf" target="confirm" title="Where do I find my Order Number?" class="ui-link">Where do I find my Order Number?</a></p>
+				</div>
+				<fieldset class="form-inline chkbxrdio-grp">
+					<legend class="required"><span class="field-name">Please read and agree with the Terms of this <a class="wb-lbx" title="Licence Agreement" href="#inline_content">Licence Agreement</a></span> <strong class="required">(required)</strong></legend>
+					<div class="label-inline">
+						<input type="checkbox" name="example6" value="1" id="tech5" required="required" />
+						<label for="tech5">I agree</label>
+					</div>
+				</fieldset>
+				<br>
+				<section id="inline_content" class="mfp-hide modal-dialog modal-content overlay-def">
+					<header class="modal-header">
+						<h2 class="modal-title">Licence Agreement</h2>
+					</header>
+					<div class="modal-body">
+						
+						<p>﻿Through its Codes-Guides On-line Library, the National Research Council of Canada (NRC) offers electronic access to publications within the National Construction Codes and Guides collection. The <abbr title="National Research Council of Canada">NRC</abbr> offers electronic access by way of downloadable PDFs and on-line subscriptions for single and, for select products, concurrent users.</p>
+						<p>By completing the Purchase Order form made available through the <abbr title="National Research Council of Canada">NRC</abbr>’s Virtual Store and by submitting the completed form to the <abbr title="National Research Council of Canada">NRC</abbr>, You are requesting electronic access to the publications identified in Your Purchase Order.</p>
+						<p>Your access to and use of the electronic publication(s) that you have ordered is subject to the terms and conditions of this license agreement. You are not permitted to access on-line subscriptions or to download the publications identified in your Purchase Order until you have agreed to be bound by all of the terms and conditions of this license agreement.</p>
+						<p>Below this license agreement there is the following on-screen statement: I agree with the terms of this license agreement. By clicking the box that precedes the statement I agree with the terms of this license agreement you are indicating your consent to be bound by and be a party to this license agreement with the <abbr title="National Research Council of Canada">NRC</abbr>. if you do not agree with all of the terms and conditions, do not click this box; you will not be able to proceed with any further steps in the process of activating the subscription or download you have ordered. For information, contact: Client Services – Codes-Guides On-line</p>
+						<p>For paid on-line subscription products, no refund of the subscription fee and no exchange will be provided if you have fully accepted the terms of this agreement and have proceeded with the activation of the subscriptions or the downloads you ordered.</p>
+						<h3 id="fn">1.0 Definitions</h3>
+						
+						
+						<p><strong>Activate</strong> means to electronically select the Licensed Product for activation during Your completion of the on-line process established by the <abbr title="National Research Council of Canada">NRC</abbr> for user registration and activation of subscriptions with the <abbr title="National Research Council of Canada">NRC</abbr>’s Codes-Guides On-line Library. Activated and Activation have corresponding meanings.</p>
 
+						<p><strong>Activation Date</strong> means the calendar date on which You Activate Your access to the Licensed Product.</p>
 
-			<!-- *****************************************************************************************************  
-		                                             Main selection form 
-			********************************************************************************************************* -->
+						<p><strong>Codes-Guides On-line Library</strong> means the collection of <abbr title="National Research Council of Canada">NRC</abbr> publications available at <a href="https://nrc.canada.ca/en/certifications-evaluations-standards/codes-canada/how-activate-subscriptions">How to activate subscriptions</a>.</p>
 
+						<p><strong>Concurrent User – On-line Subscription Product</strong> means an electronic publication, or collection of publications, available for select products in the <abbr title="National Research Council of Canada">NRC</abbr>’s National Construction Codes and Guides collection that is made available by the <abbr title="National Research Council of Canada">NRC</abbr> for simultaneous on-line access by a number of Users.</p>
 
+						<p><strong>Licensed Product</strong> means any or all of the following products which you identified in your Purchase Order: Single User – On-line Subscription Product, Concurrent User – On-line Subscription Product and PDF Download Product.</p>
 
-			<dl id="wb-dtmd">
+						<p><strong>On-line Subscription Period</strong> means, with respect to Paid On-line Subscription Products, a consecutive number of calendar days commencing on the Activation Date and expiring on the date advertised by the <abbr title="National Research Council of Canada">NRC</abbr> in association with the On-line Subscription Product that you identified in Your Purchase Order.</p>
+						
+						<p><strong>PDF Download Product</strong> means an electronic publication, or collection of publications, in the <abbr title="National Research Council of Canada">NRC</abbr>’s National Construction Codes and Guides collection that is made available by the <abbr title="National Research Council of Canada">NRC</abbr> for download from <abbr title="National Research Council of Canada">NRC</abbr>’s server in Portable Document Format (.pdf).</p>			
+						
+						<p><strong>Purchase Order</strong> means the electronic purchase order form, available at the <abbr title="National Research Council of Canada">NRC</abbr>’s Virtual Store, that You completed and submitted to the <abbr title="National Research Council of Canada">NRC</abbr> to request the Licensed Product(s) identified therein.</p>	
+						
+						<p><strong>Paid On-line Subscription Product</strong> means an On-line Subscription Products that requires the payment of a Subscription Fee to the <abbr title="National Research Council of Canada">NRC</abbr>.</p>	
+						
+						<p><strong>Single User – On-line Subscription Product</strong> means an electronic publication, or collection of publications, in the <abbr title="National Research Council of Canada">NRC</abbr>’s National Construction Codes and Guides collection that is made available by the <abbr title="National Research Council of Canada">NRC</abbr> for electronic access by a single User.</p>
+						
+						<p><strong>Subscription Fee</strong> means the purchase price, if any, of an On-line Subscription Product as shown in the Purchase Order You submitted to the <abbr title="National Research Council of Canada">NRC</abbr> through the <abbr title="National Research Council of Canada">NRC</abbr>’s Virtual Store.</p>	
+						
+						<p><strong>User</strong> means a single, natural person who may be You or one of Your employees.</p>	
+						
+						<p><strong>You</strong> means the legal person in whose name the Licensed Product is purchased and the employees of that legal person. The possessive adjective Your has a corresponding meaning.</p>			
+						
+						<h3>2.0 Grant of license</h3>
+						<p>In consideration of payment of the applicable Subscription Fee and Your consent to abide by the terms and conditions of this License, the <abbr title="National Research Council of Canada">NRC</abbr> grants You a non-exclusive right to use the Licensed Product(s) that You identified in Your Purchase Order, within the limits stated in this License. This License does not give You any ownership rights to the Licensed Product, and You must agree not to use the Licensed Product in any manner other than as allowed by this License.</p>
+						<h3>3.0 Restrictions on copying</h3>
+						<p>The Licensed Product is owned by the <abbr title="National Research Council of Canada">NRC</abbr> and is protected by Canadian Copyright Law and international treaty provisions. You may reproduce the human-readable text version of the Licensed Product subject to the following restrictions:</p>
+						<ol>
+							<li>reproductions may be made in no other manner than by use of the copy-and-paste function of Adobe Acrobat or Reader; and</li>
+							<li>reproduction must be limited to extracted portions that cumulatively amount to no more than 5% of the human-readable text version of any one of the publications included in the Licensed Product. Any other reproduction requires the written permission of the <abbr title="National Research Council of Canada">NRC</abbr>.</li>
+						</ol>
+						<h3>4.0 General restrictions on use</h3>
+						<p>Except as expressly permitted in this Agreement, You shall not:</p>
+						<ol>
+							<li>systematically reproduce, redistribute, display, or otherwise make available the publication(s), or excerpts thereof, contained in the Licensed Product;</li>
+							<li>activate, unlock or otherwise gain electronic access to the Licensed Product by any means other than those provided by the <abbr title="National Research Council of Canada">NRC</abbr>;</li>
+							<li>make electronically accessible any publication(s) or excerpts thereof contained in the Licensed Product, including, but not limited to, by email, on-line service, or Wide Area Network, such as the Internet;</li>
+							<li>abridge, modify, translate or create any derivative work based upon any publication, or excerpts thereof, contained in the Licensed Product, including, but not limited to, the creation of a searchable archive of codes and guides, without the prior written consent of the <abbr title="National Research Council of Canada">NRC</abbr>; and</li>
+							<li>remove, obscure or modify in any way the copyright notices or any other notices or disclaimers that appear on publications contained in the Licensed Product.</li>
+						</ol>
+						<h3>5.0 Additional restrictions on use of Single User – On-line Subscription Products</h3>
+						<p>If the Licensed Product that You purchased is a Single User – On-line Subscription Product, You shall not in relation to that Licensed Product,</p>
+						<ol>
+							<li>use a User Name and/or Password not registered by You directly with the <abbr title="National Research Council of Canada">NRC</abbr>;</li>
+							<li>allow anyone other than You to have access to the Licensed Product; nor</li>
+							<li>allow anyone other than You to have access to Your User Name and/or Password registered by You with the <abbr title="National Research Council of Canada">NRC</abbr>.</li>
+						</ol>
+						<h3>6.0 Additional restrictions on use of Concurrent User – On-line Subscription Products</h3>
+						<p>If the Licensed Product that You purchased is a Concurrent User – On-line Subscription Product, You shall not in relation to that Licensed Product, allow the number of concurrent users of the Licensed Product to exceed the maximum number of concurrent users advertised by the <abbr title="National Research Council of Canada">NRC</abbr> in association with the Concurrent User – On-line Subscription Product that You identified in Your Purchase Order.</p>
+						<h3>7.0 Additional restrictions on use of PDF download products</h3>
+						<p>If the Licensed Product that You purchased is a PDF Download Product, You shall not in relation to that Licensed Product, unlock the PDF Download Product, or otherwise obtain access to and save the content of the PDF Download Product onto a personal computer, any more than two (2) times.</p>
+						<h3>8.0 Your liability</h3>
+						<p>You are liable for any failure by You, including Your employees and any person whom You permit to use the Licensed Product, to comply with the terms of this Agreement.</p>
+						<h3>9.0 Availability</h3>
+						<p>The Licensed Product is subject to periodic unavailability due to regular maintenance including, but not limited to, maintenance of the server(s) and other equipment used to host the <abbr title="National Research Council of Canada">NRC</abbr>’s Codes-Guides On-line Library, installation or testing of software and loading of publications as they become available. The <abbr title="National Research Council of Canada">NRC</abbr> shall make a reasonable effort to minimize the extent of any period of unavailability due to such regular maintenance. You shall not be entitled to any credit, reduction, set-off against the purchase price or other compensation from the <abbr title="National Research Council of Canada">NRC</abbr> for downtime or any interruption in the availability of the Licensed Product.</p>
+						<h3>10.0 Transfer of license</h3>
+						<p>You may not assign, sublicense or otherwise transfer this License without the prior written consent of the <abbr title="National Research Council of Canada">NRC</abbr>. If consent is given, the third party must agree to accept the terms and conditions of this License.</p>
+						<h3>11.0 Limited warranty</h3>
+						<p><strong>11.1</strong> The <abbr title="National Research Council of Canada">NRC</abbr> warrants that the publications contained in the Licensed Product do not infringe any copyright or violate any obligation of confidentiality. </p>
+						<p><strong>11.2</strong> The electronic access to, and use of, the Licensed Product and the Codes-Guides On-line Library is provided to You on an as is basis and has not been supplied to meet Your particular requirements. It is Your responsibility to satisfy Yourself prior to entering into this agreement that the on-line access delivery and/or the .pdf download will meet Your requirements and be compatible with Your hardware/software configuration. No failure of any part of the Licensed Product to be suitable for Your requirements will give rise to any claim against the <abbr title="National Research Council of Canada">NRC</abbr>.</p>
+						<p><strong>11.3</strong> Reasonable care is taken to ensure the accuracy and completeness of the information set out in the publication contained in the licensed product, but the <abbr title="National Research Council of Canada">NRC</abbr> makes no representations or express or implied warranties that the licensed product is free from errors or omissions. In case of inconsistency between the human readable text contained in the licensed product and the hard-copy printed version of the national construction codes and guides published by the <abbr title="National Research Council of Canada">NRC</abbr>, the latter shall have priority.</p>
+						<p><strong>11.4</strong> Except as expressly stated herein, the <abbr title="National Research Council of Canada">NRC</abbr> disclaims any warranties, expressed, implied, or statutory, of any kind or nature with respect to the licensed product and the <abbr title="National Research Council of Canada">NRC</abbr>'s codes-guides on-line library, including, but not limited to, warranties of performance, freedom from error or defect, performance or merchantability or fitness for a particular purpose. In no event shall the <abbr title="National Research Council of Canada">NRC</abbr> be liable for any indirect or consequential damages (including, without limitation, damages for loss of business profits, lost savings or other incidental damages) arising from the use of the licensed product or from the use of the <abbr title="National Research Council of Canada">NRC</abbr>'s codes-guides on-line library.</p>
+						<p><strong>11.5</strong> The aggregate maximum liability of the <abbr title="National Research Council of Canada">NRC</abbr> in respect of any direct loss or any other loss (to the extent that such loss is not excluded by this License), whether such claim arises in contract or tort, shall not exceed $1000.</p>
+						<h3>12.0 General</h3>
+						<p>This agreement supersedes all prior communications, negotiations and agreements concerning the Licensed Product. No amendment or waiver of terms is effective unless it is in writing, signed by both parties, and specifically states the intention to affect this agreement.</p>
+						<h3>13.0 Applicable laws</h3>
+						<p>This License is governed by the laws of Ontario and the laws of Canada applicable therein. In relation to this License, You consent to jurisdiction of the courts of Ontario.</p>
+						<h3>14.0 Termination</h3>
+						<p>In the case of a Paid On-line Subscription Product purchased by You, this License is effective for the On-line Subscription Period, unless it is terminated earlier.</p>
+						<p>In the case of a PDF Download Product, this License is effective in perpetuity, unless it is terminated earlier.</p>
+						<p>This License terminates automatically without notice from the <abbr title="National Research Council of Canada">NRC</abbr> if You fail to comply with any provision of this License.</p>
+						<p>National Research Council Canada<br>
+							Codes-Guides On-line Library<br>
+						Subscription License</p>
+						
+					</div>
+				</section>
+				<button type="submit" class="btn btn-primary">Continue</button>
+				<button type="submit" class="btn btn-default">Cancel</button>
+				
+			</div>
+		</form>
+		<!-- *****************************************************************************************************
+		Main selection form
+		********************************************************************************************************* -->
+		<dl id="wb-dtmd">
 			<dt>Date modified:</dt>
 			<dd>
-				<time>2020-08-14</time>
+			<time>2020-08-14</time>
 			</dd>
 		</dl>
-	
-</main>
-<!-- MainContentEnd -->
-<!-- Static footer starts -->
-<footer id="wb-info">
-	<div class="landscape">
-		<nav class="container wb-navcurr">
-			<h2 class="wb-inv">About government</h2>
-			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
-				<li><a href="https://www.canada.ca/en/contact.html">Contact us</a></li>
-				<li><a href="https://www.canada.ca/en/government/dept.html">Departments and agencies</a></li>
-				<li><a href="https://www.canada.ca/en/government/publicservice.html">Public service and military</a></li>
-				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
-				<li><a href="https://www.canada.ca/en/government/system/laws.html">Treaties, laws and regulations</a></li>
-				<li><a href="https://www.canada.ca/en/transparency/reporting.html">Government-wide reporting</a></li>
-				<li><a href="https://pm.gc.ca/eng">Prime Minister</a></li>
-				<li><a href="https://www.canada.ca/en/government/system.html">How government works</a></li>
-				<li><a href="https://open.canada.ca/en/">Open government</a></li>
-			</ul>
-		</nav>
-	</div>
-	<div class="brand">
-		<div class="container">
-			<div class="row">
-				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk">
-					<h2 class="wb-inv">About this site</h2>
-					<ul>
-						<li><a href="https://www.canada.ca/en/social.html">Social media</a></li>
-						<li><a href="https://www.canada.ca/en/mobile.html">Mobile applications</a></li>
-						<li><a href="https://www1.canada.ca/en/newsite.html">About Canada.ca</a></li>
-						<li><a href="https://www.canada.ca/en/transparency/terms.html">Terms and conditions</a></li>
-						<li><a href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
-					</ul>
-				</nav>
-				<div class="col-xs-6 visible-sm visible-xs tofpg"> <a href="#wb-cont">Top of Page <span class="glyphicon glyphicon-chevron-up"></span></a> </div>
-				<div class="col-xs-6 col-md-3 col-lg-2 text-right"> <img src="https://wet-boew.github.io/themes-dist/GCWeb/assets/wmms-blk.svg" alt="Symbol of the Government of Canada"> </div>
+		
+	</main>
+	<!-- MainContentEnd -->
+	<!-- Static footer starts -->
+	<footer id="wb-info">
+		<div class="landscape">
+			<nav class="container wb-navcurr">
+				<h2 class="wb-inv">About government</h2>
+				<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+					<li><a href="https://www.canada.ca/en/contact.html">Contact us</a></li>
+					<li><a href="https://www.canada.ca/en/government/dept.html">Departments and agencies</a></li>
+					<li><a href="https://www.canada.ca/en/government/publicservice.html">Public service and military</a></li>
+					<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+					<li><a href="https://www.canada.ca/en/government/system/laws.html">Treaties, laws and regulations</a></li>
+					<li><a href="https://www.canada.ca/en/transparency/reporting.html">Government-wide reporting</a></li>
+					<li><a href="https://pm.gc.ca/eng">Prime Minister</a></li>
+					<li><a href="https://www.canada.ca/en/government/system.html">How government works</a></li>
+					<li><a href="https://open.canada.ca/en/">Open government</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="brand">
+			<div class="container">
+				<div class="row">
+					<nav class="col-md-9 col-lg-10 ftr-urlt-lnk">
+						<h2 class="wb-inv">About this site</h2>
+						<ul>
+							<li><a href="https://www.canada.ca/en/social.html">Social media</a></li>
+							<li><a href="https://www.canada.ca/en/mobile.html">Mobile applications</a></li>
+							<li><a href="https://www1.canada.ca/en/newsite.html">About Canada.ca</a></li>
+							<li><a href="https://www.canada.ca/en/transparency/terms.html">Terms and conditions</a></li>
+							<li><a href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+						</ul>
+					</nav>
+					<div class="col-xs-6 visible-sm visible-xs tofpg"> <a href="#wb-cont">Top of Page <span class="glyphicon glyphicon-chevron-up"></span></a> </div>
+					<div class="col-xs-6 col-md-3 col-lg-2 text-right"> <img src="https://wet-boew.github.io/themes-dist/GCWeb/assets/wmms-blk.svg" alt="Symbol of the Government of Canada"> </div>
+				</div>
 			</div>
 		</div>
-	</div>
-</footer>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
-<script src="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/js/wet-boew.min.js"></script>
-<script src="https://wet-boew.github.io/themes-dist/GCWeb/js/theme.min.js"></script>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+	<script src="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/js/wet-boew.min.js"></script>
+	<script src="https://wet-boew.github.io/themes-dist/GCWeb/js/theme.min.js"></script>
 </body>
 </html>
