@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
 		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-	<title>CODES-GUIDES Online Library - National Research Council Canada</title>
+	<title>Codes-Guides Online Library - National Research Council Canada</title>
 	<meta content="width=device-width,initial-scale=1" name="viewport">
 	<meta name="description" content="Static header and footer on Bootstrap 3 with the mega menu. Web Experience Toolkit (WET) includes reusable components for building and maintaining innovative Web sites that are accessible, usable, and interoperable.">
 	<link href="https://wet-boew.github.io/themes-dist/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
@@ -93,49 +93,91 @@
 <!-- CONTENT TITLE BEGINS | DEBUT DU TItrE DU CONTENU -->
 <h1 class="provisional gc-thickline">Codes-Guides Online Library</h1>
 <!-- CONTENT TITLE ENDS | FIN DU TItrE DU CONTENU -->
-<h2 class="h3 mrgn-bttm-0">1. Software requirements</h2>
-<meter value="2.5" min="0" max="10">Step 1 of 4</meter>
-<div class="row">
-	<div class="col-md-8">
-		<section class="provisional">
-			<form role="form">
-				<div class="well">
-				<p>Before you activate and view your subscription, confirm installation of required software:</p>
-				<fieldset class="chkbxrdio-grp">
-					<legend class="required"><span class="field-name">I have installed Adobe Reader or Acrobat </span> <strong class="required">(required)</strong></legend>
-					<div class="checkbox">
-						<label for="animal1"><input type="checkbox" name="animal" value="1" id="animal1" required="required" />&#160;&#160;Yes</label>
-					</div>
-					<p class="h6 mrgn-tp-0">If not, install <a href="http://www.adobe.com/" class="noPadding ui-link" target="install">Adobe Acrobat or Reader</a> now.</p>
-					<legend class="required"><span class="field-name">I have installed FileOpen Plug-in</span> <strong class="required">(required)</strong></legend>
-					<div class="checkbox">
-						<label for="animal2"><input type="checkbox" name="animal" value="1" id="animal2" required="required" />&#160;&#160;Yes</label>
-						<p class="h6 mrgn-tp-0">Test your <a href="http://plugin.fileopen.com/installcomplete/installcomplete.pdf" target="install" class="noPadding ui-link">FileOpen installation</a>.</p>
-						<p class="h6 mrgn-tp-0">If not, visit the <a href="http://plugin.fileopen.com/" target="install" class="noPadding ui-link">FileOpen Web site</a> now.</p>
-					</div>
-				</fieldset>
-				<button type="submit" class="btn btn-primary">Continue</button>
-				<button type="submit" class="btn btn-default">Cancel</button>
-				</div>
-			</form>
-		</section>
-	</div>
-</div>
-
-		
-	
-
-
-
 
 		  
 
 			<!-- *****************************************************************************************************  
 		                                             Main selection form 
 			********************************************************************************************************* -->
+	<div class="row">
+		<div class="col-md-8 mrgn-bttm-md">
+			<div class="row provisional">
+				<div class="col-sm-6 col-xs-12">
+					<h2 class='h3 bg-img-hdng full-width mrgn-tp-0'>New user registration</h2>
+				</div>
+			</div>
 
+			<div class="alert alert-info">		
+				<p>Mandatory fields are marked by an asterisk ( <span class="mandatory" style="color: #d3080c;">*&nbsp;</span>).</p>
+			</div>
+		
+			<div class="wb-frmvld">
+				<form class="form-horizontal" role="form" method="get" action="#">
+					<fieldset class="legend-brdr-bttm">
+						<legend>Identification Information</legend>
+						<div class="form-group">
+							<label for="inputEmail" class="col-sm-4 control-label required">E-mail</label>
+							<div class="col-sm-8">
+							<input type="text" class="form-control" id="inputEmail" required="required"/>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="inputFirstName" class="col-sm-4 control-label required">First name</label>
+							<div class="col-sm-8">
+							<input type="text" class="form-control" id="inputFirstName" class="required"/>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="inputFullName" class="col-sm-4 control-label required">Last name</label>
+							<div class="col-sm-8">
+							<input type="text" class="form-control" id="inputLastName" required="required"/>
+							</div>
+						</div>
+						
+					</fieldset>
+					<fieldset class="legend-brdr-bttm">
+						<legend>Login information</legend>
+						<div class="form-group">
+							<label for="inputUsername" class="col-sm-4 control-label required">Username</label>
+							<div class="col-sm-8">
+							<input type="username" class="form-control" id="inputUsername" required="required"/>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="inputPW2" class="col-sm-4 control-label required">Password</label>
+							<div class="col-sm-8">
+							<input type="password" class="form-control" id="inputPW2" required="required"/>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="inputPW2" class="col-sm-4 control-label required">Confirm password</label>
+							<div class="col-sm-8">
+							<input type="password" class="form-control" id="inputPW2" required="required"/>
+							</div>
+						</div>
+					</fieldset>
 
+					<div class="form-group">
+						<div class="col-sm-10">
+							<button type="submit" class="btn btn-primary">Register</button>
+							<button type="submit" class="btn btn-default">Cancel</button>
+						</div>
+					</div>
+				</form>	  		
+			</div>
+		</div>
 
+		<div class="col-md-4">
+			<h2 class="mrgn-tp-0 h3">Related Links</h2>
+			<div class="list-group">
+			  <a href="https://nrc.canada.ca/en/certifications-evaluations-standards/codes-canada/codes-guides-online-library" class="list-group-item">About Online Library</a>
+			  <a href="https://nrc.canada.ca/en/research-development/products-services/shop-nrc" class="list-group-item">Virtual store</a>
+			  <a href="https://nrc.canada.ca/en/certifications-evaluations-standards/troubleshooting-guide-downloadable-online-subscriptions" class="list-group-item">User Manual</a>
+			  <a href="https://nrc.canada.ca/en/node/1268/" class="list-group-item">Client Support</a>
+			  <a href="https://nrc.canada.ca/en/certifications-evaluations-standards/troubleshooting-guide-downloadable-online-subscriptions" class="list-group-item">Troubleshooting Guide</a>  
+			</div>
+		</div>
+	</div>
 			<dl id="wb-dtmd">
 			<dt>Date modified:</dt>
 			<dd>
