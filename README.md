@@ -18,7 +18,7 @@ Found below are mockups of the NRC's codes-guides online library after being con
 [Activation p1 - english](https://marcmeth.github.io/CGO_wet4_conversion/SUO_activate_p1_eng)<br/>
 [Activation p2 - english](https://marcmeth.github.io/CGO_wet4_conversion/SUO_activate_p2_eng)<br/>
 [Activation p3 - english](https://marcmeth.github.io/CGO_wet4_conversion/SUO_activate_p3_eng)<br/>
-[Activation p4 - english](https://marcmeth.github.io/CGO_wet4_conversion/SUO_activate_p3_eng)
+[Activation p4 - english](https://marcmeth.github.io/CGO_wet4_conversion/SUO_activate_p4_eng)
 
 ## Being worked on
 
