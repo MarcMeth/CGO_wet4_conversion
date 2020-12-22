@@ -20,10 +20,10 @@ Found below are mockups of the NRC's codes-guides online library after being con
 [Activation p3 - english](https://marcmeth.github.io/CGO_wet4_conversion/SUO_activate_p3_eng)<br/>
 [Activation p4 - english](https://marcmeth.github.io/CGO_wet4_conversion/SUO_activate_p4_eng)
 
-## Being worked on
-
 ### Concurrent user
 [Registration - english](https://marcmeth.github.io/CGO_wet4_conversion/CU_registration_eng)<br/>
+[Landing - english](https://marcmeth.github.io/CGO_wet4_conversion/CU_main_eng)<br/>
+[Active subsciptions - english](https://marcmeth.github.io/CGO_wet4_conversion/CU_ActiveSubs_eng)
 
 
 ## Tools/Resources used
